@@ -4,7 +4,7 @@ use warnings;
 use Carp;
 use I22r::Translate::Request;
 
-our $VERSION = '0.92';
+our $VERSION = '0.94';
 our %config;
 our %backends;
 my $translate_calls = 0;
@@ -141,7 +141,7 @@ I22r::Translate - Translate content with the Internationalizationizer
 
 =head1 VERSION
 
-Version 0.92
+Version 0.94
 
 =head1 SYNOPSIS
 
@@ -397,7 +397,7 @@ L<Lingua::Translate>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 Marty O'Brien.
+Copyright 2012-2013 Marty O'Brien.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published

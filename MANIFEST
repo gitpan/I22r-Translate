@@ -1,14 +1,26 @@
 Changes
+inc/Module/AutoInstall.pm
+inc/Module/Install.pm
+inc/Module/Install/AutoInstall.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Include.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
 lib/I22r/Translate.pm
 lib/I22r/Translate/Backend.pm
+lib/I22r/Translate/Filter.pm
 lib/I22r/Translate/Filter/HTML.pm
 lib/I22r/Translate/Filter/Literal.pm
-lib/I22r/Translate/Filter.pm
 lib/I22r/Translate/Google.pm
 lib/I22r/Translate/Request.pm
 lib/I22r/Translate/Result.pm
 Makefile.PL
 MANIFEST			This list of files
+META.yml
 README
 t/00-load.t
 t/01-load-backend.t
@@ -35,10 +47,8 @@ t/65-lcase.t
 t/66-chinese.t
 t/68-french.t
 t/Constants.pm
+t/manifest.t
+t/pod.t
 t/Test/Backend/Piglatinizer.pm
 t/Test/Backend/Reverser.pm
 t/Test/Backend/Trivial.pm
-t/manifest.t
-t/pod.t
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)

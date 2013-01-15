@@ -6,7 +6,7 @@ use Carp;
 use Data::Dumper;
 with 'I22r::Translate::Backend';
 
-our $VERSION = '0.91';
+our $VERSION = '0.94';
 
 {
     # code from REST::Google and REST::Google::Translate2 packages.

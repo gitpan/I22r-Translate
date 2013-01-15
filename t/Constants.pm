@@ -37,7 +37,7 @@ sub basic_config {
     I22r::Translate->config(
 	'I22r::Translate::Google' => {
 	    ENABLED => 1,
-	    API_KEY => $t::Constants::GOOGLE_API_KEY,
+	    API_KEY => $t::Constants::GOOGLE_API_KEY, # Google
 	    REFERER => 'http://just.doing.some.testing/',
 	    @_ } );
 }

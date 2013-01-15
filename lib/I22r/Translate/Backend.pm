@@ -3,7 +3,7 @@ use Moose::Role;
 use I22r::Translate::Request;
 use I22r::Translate::Result;
 
-our $VERSION = '0.92';
+our $VERSION = '0.94';
 requires 'can_translate';
 requires 'get_translations';
 # requires 'config';

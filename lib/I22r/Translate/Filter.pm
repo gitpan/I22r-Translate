@@ -1,6 +1,6 @@
 package I22r::Translate::Filter;
 use Moose::Role;
-our $VERSION = '0.92';
+our $VERSION = '0.94';
 requires 'apply';
 requires 'unapply';
 1;

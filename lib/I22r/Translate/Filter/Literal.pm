@@ -3,7 +3,7 @@ use Carp;
 use Moose;
 with 'I22r::Translate::Filter';
 
-our $VERSION = '0.91';
+our $VERSION = '0.94';
 
 our $DOUBLE_BRACES_WRAP_LITERAL = 1;
 our $DOUBLE_BRACES_WRAP_PARAMETER_LITERAL = 1;

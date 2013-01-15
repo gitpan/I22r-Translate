@@ -1,7 +1,7 @@
 package I22r::Translate::Result;
 use Moose;
 
-our $VERSION = '0.91';
+our $VERSION = '0.94';
 
 has id => ( is => 'ro', isa => 'Str', required => 1 );
 has olang => ( is => 'ro', isa => 'Str', required => 1,  );

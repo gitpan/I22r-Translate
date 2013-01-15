@@ -1,9 +1,37 @@
-use 5.006;
+use 5.010;   # too addicted to the  //  operator
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+#use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
+name 'I22r-Translate';
+all_from 'lib/I22r/Translate.pm';
+license 'perl';
+
+requires 'Class::Accessor';
+requires 'Class::Data::Inheritable';
+requires 'HTTP::Request';
+requires 'JSON::Any';
+requires 'LWP::UserAgent';
+requires 'Moose';
+requires 'Moose::Role';
+requires 'MooseX::ClassAttribute';
+requires 'URI';
+test_requires 'Test::More';
+
+no_index package => 'I22r::Translate::Request';
+no_index package => 'I22r::Translate::Result';
+no_index package => 'I22r::REST::Google';
+no_index package => 'I22r::REST::Google::Translate';
+no_index package => 'I22r::REST::Google::Data';
+
+auto_install;
+WriteAll;
+
+=pod
+
+Thar be old config passed to WriteMakefile function:
+
     NAME                => 'I22r::Translate',
     AUTHOR              => q{Marty O'Brien <mob@cpan.org>},
     VERSION_FROM        => 'lib/I22r/Translate.pm',
@@ -25,13 +53,20 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,
+	'Class::Accessor' => 0,
+	'Class::Data::Inheritable' => 0,
+	'HTTP::Request' => 0,
+	'JSON::Any' => 0,
+	'LWP::UserAgent' => 0,
 	'Moose' => 0,
 	'Moose::Role' => 0,
 	'MooseX::ClassAttribute' => 0,
+	'URI' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'I22r-Translate-*' },
-);
+
+=cut
 
 print STDERR qq[
 *******************************************************************

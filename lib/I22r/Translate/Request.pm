@@ -2,7 +2,7 @@ package I22r::Translate::Request;
 use Moose;
 use Carp;
 
-our $VERSION = '0.92';
+our $VERSION = '0.94';
 
 has _config => ( is => 'rw', isa => 'HashRef', 
 		 default => sub { {} } );
